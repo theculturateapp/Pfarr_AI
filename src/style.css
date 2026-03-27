@@ -86,3 +86,7 @@ footer {
     font-size: 14px;
     margin-top: 30px;
 }
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
