@@ -40,7 +40,7 @@ form {
     line-height: 1.5;
     margin-top: 5px;
     opacity: 0.6;
-    font-size 12px;
+    font-size:0cap 12px;
 }
 
 .instructions {
@@ -68,10 +68,9 @@ form {
     font-size: 18px;
     font-weight: bold;
     background-color: #fff;
-    display: none;
     padding: 20px;
     line-height: 24px;
-    border-left: 3px splid #885df1;
+    border-left: 3px solid #885df1;
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
@@ -88,11 +87,16 @@ footer {
     margin-top: 30px;
 }
 
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
+
 .blink {
   animation: blink 1s step-start 0s infinite;
 }
