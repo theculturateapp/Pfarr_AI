@@ -76,7 +76,7 @@ form {
 }
 
 .hidden {
-    
+    display: none;
 }
 
 .poem strong {
@@ -86,4 +86,13 @@ footer {
     text-align: center;
     font-size: 14px;
     margin-top: 30px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }
