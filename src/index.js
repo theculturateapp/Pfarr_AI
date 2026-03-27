@@ -17,7 +17,7 @@ let apiKey = "37674b4ao471bb32b44ta37b064ef2da";
     let poemElement = document.querySelector("#poem");
 
     poemElement.classList.remove("hidden");
-    poemElement.innerHTML = `⏱ Generating Haiku about ${instructionsInput.value}`;
+    poemElement.innerHTML = `<div class="generating">⏱ Generating Haiku about ${instructionsInput.value}</div>`;
     axios.get(apiUrl).then(displayPoem);
 }
 
