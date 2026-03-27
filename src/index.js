@@ -1,5 +1,4 @@
-function displayPoem(response) {
- console.log("poem generated");   
+function displayPoem(response) { 
  new Typewriter("#poem", {
   strings: response.data.answer,
   autoStart: true,
@@ -21,12 +20,8 @@ function generatePoem(event) {
     poemElement.classList.remove("hidden");
     poemElement.innerHTML = <div class="generating">`⏱ Generating Haiku about ${instructionsInput.value}</div>`;
 
-    console.log("Generating Poem");
-    console.log(`Prompt: ${prompt}`);
-    console.log(`Context: ${context}`);
-
     axios.get(apiUrl).then(displayPoem);
-};
+}
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
